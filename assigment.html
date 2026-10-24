@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let secretNumber = 15;
+let attempts = 0;
+
+while (attempts < 5) {
+    let guess = Number(prompt("Guess the secret number:"));
+    attempts++;
+
+    if (guess === secretNumber) {
+        alert("Correct! You win!");
+        break;
+    } else if (guess < secretNumber) {
+        alert("Low! Try a higher number.");
+    } else {
+        alert("High! Try a lower number.");
+    }
+}
+
+alert("Total attempts: " + attempts);
+    </script>
+ </body>
+ </html>
